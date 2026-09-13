@@ -1,0 +1,8 @@
+{
+  "name": "تقسیمینو",
+  "description": "خرجهامون با هم، دوستی‌هامون همیشگی — تقسیم هزینه گروهی با ریال و ارز",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

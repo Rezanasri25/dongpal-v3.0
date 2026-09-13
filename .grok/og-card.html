@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<style>
+@font-face {
+  font-family: Vazirmatn;
+  src: url("fonts/Vazirmatn-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: Vazirmatn;
+  src: url("fonts/Vazirmatn-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+html, body {
+  margin: 0;
+  width: 1200px;
+  height: 630px;
+  overflow: hidden;
+  background: #F7F8FC;
+}
+.stage {
+  position: relative;
+  width: 1200px;
+  height: 630px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(72px);
+}
+.orb.teal { width: 460px; height: 460px; background: #0A9B82; opacity: 0.13; top: -120px; left: -60px; }
+.orb.lav { width: 420px; height: 420px; background: #7B6CF6; opacity: 0.12; bottom: -140px; right: -40px; }
+.orb.mint { width: 280px; height: 280px; background: #0A9B82; opacity: 0.07; bottom: 40px; left: 180px; }
+.wordmark {
+  font-family: Vazirmatn, sans-serif;
+  font-weight: 800;
+  font-size: 118px;
+  color: #0A9B82;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  margin: 0;
+  z-index: 2;
+  text-shadow: 0 10px 28px rgba(10, 155, 130, 0.16);
+}
+.tagline {
+  font-family: Vazirmatn, sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #1C2033;
+  opacity: 0.78;
+  margin: 10px 0 6px;
+  z-index: 2;
+  letter-spacing: 0.01em;
+}
+.friends {
+  z-index: 2;
+  margin-top: 8px;
+  filter: drop-shadow(0 18px 22px rgba(28, 32, 51, 0.12));
+}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="orb teal"></div>
+  <div class="orb lav"></div>
+  <div class="orb mint"></div>
+  <h1 class="wordmark">دنگ‌پال</h1>
+  <p class="tagline">«خرجه‌امون با هم»</p>
+  <svg class="friends" width="640" height="268" viewBox="0 0 640 268" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <radialGradient id="skinA" cx="38%" cy="32%" r="70%">
+        <stop offset="0%" stop-color="#FFE0C4"/>
+        <stop offset="100%" stop-color="#E2A57A"/>
+      </radialGradient>
+      <radialGradient id="skinB" cx="38%" cy="32%" r="70%">
+        <stop offset="0%" stop-color="#D39A62"/>
+        <stop offset="100%" stop-color="#8A4B24"/>
+      </radialGradient>
+      <radialGradient id="skinC" cx="38%" cy="32%" r="70%">
+        <stop offset="0%" stop-color="#F6D0AE"/>
+        <stop offset="100%" stop-color="#C9845C"/>
+      </radialGradient>
+      <radialGradient id="skinD" cx="38%" cy="32%" r="70%">
+        <stop offset="0%" stop-color="#F3C39A"/>
+        <stop offset="100%" stop-color="#C36E48"/>
+      </radialGradient>
+      <linearGradient id="tealBody" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#2BC4A8"/>
+        <stop offset="100%" stop-color="#087866"/>
+      </linearGradient>
+      <linearGradient id="lavBody" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#A496FF"/>
+        <stop offset="100%" stop-color="#5B4CD6"/>
+      </linearGradient>
+      <linearGradient id="creamBody" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#FFFFFF"/>
+        <stop offset="100%" stop-color="#E4E7F0"/>
+      </linearGradient>
+      <linearGradient id="inkBody" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#3A425C"/>
+        <stop offset="100%" stop-color="#1C2033"/>
+      </linearGradient>
+      <linearGradient id="receipt" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#FFFFFF"/>
+        <stop offset="100%" stop-color="#F0F2F8"/>
+      </linearGradient>
+      <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+        <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#1C2033" flood-opacity="0.16"/>
+      </filter>
+    </defs>
+
+    <!-- ground shadow -->
+    <ellipse cx="320" cy="248" rx="210" ry="16" fill="#1C2033" opacity="0.10"/>
+
+    <!-- BACK: lavender friend -->
+    <g transform="translate(320 78)" filter="url(#soft)">
+      <ellipse cx="0" cy="78" rx="46" ry="52" fill="url(#lavBody)"/>
+      <ellipse cx="-40" cy="58" rx="16" ry="12" fill="url(#lavBody)" transform="rotate(-28 -40 58)"/>
+      <ellipse cx="40" cy="58" rx="16" ry="12" fill="url(#lavBody)" transform="rotate(28 40 58)"/>
+      <circle cx="0" cy="0" r="38" fill="url(#skinB)"/>
+      <ellipse cx="-12" cy="-14" rx="12" ry="8" fill="#fff" opacity="0.22"/>
+      <path d="M-34 -8 C-36 -44 -10 -52 0 -50 C12 -52 36 -44 34 -8 C18 -22 -18 -22 -34 -8Z" fill="#1C2033"/>
+      <circle cx="-12" cy="2" r="4.4" fill="#1C2033"/>
+      <circle cx="12" cy="2" r="4.4" fill="#1C2033"/>
+      <circle cx="-10.6" cy="0.6" r="1.5" fill="#fff"/>
+      <circle cx="13.4" cy="0.6" r="1.5" fill="#fff"/>
+      <path d="M-8 14 Q0 21 8 14" stroke="#5A3318" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+      <ellipse cx="-20" cy="12" rx="6" ry="3.4" fill="#E08989" opacity="0.4"/>
+      <ellipse cx="20" cy="12" rx="6" ry="3.4" fill="#E08989" opacity="0.4"/>
+    </g>
+
+    <!-- LEFT: teal friend -->
+    <g transform="translate(198 108)" filter="url(#soft)">
+      <ellipse cx="0" cy="72" rx="42" ry="48" fill="url(#tealBody)"/>
+      <ellipse cx="38" cy="52" rx="18" ry="11" fill="url(#tealBody)" transform="rotate(18 38 52)"/>
+      <circle cx="0" cy="0" r="36" fill="url(#skinA)"/>
+      <ellipse cx="-11" cy="-13" rx="11" ry="7" fill="#fff" opacity="0.32"/>
+      <path d="M-33 -6 C-28 -46 8 -50 22 -38 C8 -30 -8 -18 -20 4 C-32 2 -36 -2 -33 -6Z" fill="#0A9B82"/>
+      <circle cx="18" cy="-22" r="8" fill="#0A9B82"/>
+      <circle cx="-11" cy="1" r="4.2" fill="#1C2033"/>
+      <circle cx="12" cy="1" r="4.2" fill="#1C2033"/>
+      <circle cx="-9.6" cy="-0.4" r="1.4" fill="#fff"/>
+      <circle cx="13.4" cy="-0.4" r="1.4" fill="#fff"/>
+      <path d="M-7 13 Q1 20 9 13" stroke="#C36E48" stroke-width="2.1" fill="none" stroke-linecap="round"/>
+      <ellipse cx="-18" cy="12" rx="5.5" ry="3.2" fill="#F0A0A0" opacity="0.45"/>
+      <ellipse cx="18" cy="12" rx="5.5" ry="3.2" fill="#F0A0A0" opacity="0.45"/>
+    </g>
+
+    <!-- RIGHT: cream friend -->
+    <g transform="translate(442 110)" filter="url(#soft)">
+      <ellipse cx="0" cy="72" rx="42" ry="48" fill="url(#creamBody)"/>
+      <ellipse cx="-38" cy="54" rx="18" ry="11" fill="url(#creamBody)" transform="rotate(-16 -38 54)"/>
+      <circle cx="0" cy="0" r="36" fill="url(#skinC)"/>
+      <ellipse cx="-11" cy="-13" rx="11" ry="7" fill="#fff" opacity="0.28"/>
+      <path d="M-32 -10 C-38 -40 -8 -52 2 -48 C28 -54 38 -28 32 -6 C14 -24 -16 -24 -32 -10Z" fill="#3A2A22"/>
+      <circle cx="-11" cy="1" r="4.2" fill="#1C2033"/>
+      <circle cx="12" cy="1" r="4.2" fill="#1C2033"/>
+      <circle cx="-9.6" cy="-0.4" r="1.4" fill="#fff"/>
+      <circle cx="13.4" cy="-0.4" r="1.4" fill="#fff"/>
+      <path d="M-7 13 Q1 20 9 13" stroke="#C36E48" stroke-width="2.1" fill="none" stroke-linecap="round"/>
+      <ellipse cx="-18" cy="12" rx="5.5" ry="3.2" fill="#F0A0A0" opacity="0.45"/>
+      <ellipse cx="18" cy="12" rx="5.5" ry="3.2" fill="#F0A0A0" opacity="0.45"/>
+    </g>
+
+    <!-- FRONT: ink friend with split receipt -->
+    <g transform="translate(320 138)" filter="url(#soft)">
+      <ellipse cx="0" cy="70" rx="44" ry="46" fill="url(#inkBody)"/>
+      <ellipse cx="-42" cy="44" rx="15" ry="11" fill="url(#inkBody)" transform="rotate(-40 -42 44)"/>
+      <g transform="translate(40 28) rotate(18)">
+        <path d="M-2 0 h22 a3 3 0 0 1 3 3 v34 l-4 3 4 3 -4 3 4 3 H-2 a3 3 0 0 1 -3 -3 V3 a3 3 0 0 1 3 -3Z" fill="url(#receipt)" stroke="#D5D8E4" stroke-width="1"/>
+        <rect x="2" y="8" width="14" height="2.2" rx="1" fill="#0A9B82"/>
+        <rect x="2" y="14" width="10" height="2.2" rx="1" fill="#0A9B82"/>
+        <rect x="2" y="20" width="12" height="2.2" rx="1" fill="#7B6CF6"/>
+        <rect x="13.2" y="0" width="2.2" height="46" fill="#0A9B82" opacity="0.55"/>
+      </g>
+      <circle cx="0" cy="0" r="37" fill="url(#skinD)"/>
+      <ellipse cx="-12" cy="-14" rx="12" ry="8" fill="#fff" opacity="0.26"/>
+      <path d="M-34 -4 C-30 -40 10 -50 28 -32 C12 -28 -4 -10 -12 8 C-28 6 -36 2 -34 -4Z" fill="#5C2E1A"/>
+      <circle cx="-12" cy="2" r="4.4" fill="#1C2033"/>
+      <circle cx="12" cy="2" r="4.4" fill="#1C2033"/>
+      <circle cx="-10.6" cy="0.6" r="1.5" fill="#fff"/>
+      <circle cx="13.4" cy="0.6" r="1.5" fill="#fff"/>
+      <path d="M-8 14 Q0 22 8 14" stroke="#8A3A28" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+      <ellipse cx="-20" cy="12" rx="6" ry="3.4" fill="#E08989" opacity="0.42"/>
+      <ellipse cx="20" cy="12" rx="6" ry="3.4" fill="#E08989" opacity="0.42"/>
+    </g>
+  </svg>
+</div>
+</body>
+</html>
